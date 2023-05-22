@@ -1,14 +1,10 @@
 #include <Servo.h>
 
 const int flexPin[5] = {A0, A1, A2, A3, A4};
-
-// Change these constants according to your project's design
-const float VCC = 5;      // voltage at Ardunio 5V line
-const float R_DIV = 10000.0;  // resistor used to create a voltage divider
-const float flatResistance = 25000.0; // resistance when flat
-const float bendResistance = 60000.0;  // resistance at 90 deg
-#include <Servo.h>
-
+const float VCC = 5;    
+const float R_DIV = 10000.0;  
+const float flatResistance = 25000.0; 
+const float bendResistance = 60000.0;  
 Servo myservo[5]; 
 void setup() {
   Serial.begin(9600);
